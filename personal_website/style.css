@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+header {
+  background-color: #0e0e0e;
+  color: white;
+  text-align: center;
+  padding: 2px;
+  font-family: sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+section {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+/* Styling for the About Me section */
+#about {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Styling for the Projects section */
+#projects {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Styling for the Contact Me section */
+#contact {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Styling for headers within sections */
+h2 {
+  color: #00bcd4; /* Cyan or any futuristic color you prefer */
+  font-size: 24px; /* Increase font size for a modern look */
+}
+
+/* Styling for text content within sections */
+p {
+  font-size: 18px; /* Larger text for a modern look */
+  line-height: 1.6;
+}
+
+/* Styling for links within sections */
+a {
+  color: #00bcd4; /* Cyan or any futuristic color you prefer */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Add a border radius to give a futuristic feel to sections */
+section {
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for a modern touch */
+}
