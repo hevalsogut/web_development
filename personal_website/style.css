@@ -1,85 +1,107 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
+* {
   padding: 0;
-  background-color: #333;
-}
-
-header {
-  background-color: #0e0e0e;
-  color: white;
-  text-align: center;
-  padding: 2px;
+  margin: 0;
   font-family: sans-serif;
+  box-sizing: border-box;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url(6CHafJ.jpg);
+  background-size: cover;
+  background-position: center;
 }
-
-nav li {
-  display: inline;
-  margin-right: 20px;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
 }
-
-section {
-  padding: 20px;
-}
-
-footer {
-  background-color: #333;
+.logo {
   color: white;
-  text-align: center;
-  padding: 10px;
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
-/* Styling for the About Me section */
-#about {
-  background-color: #111;
-  color: #fff;
-  padding: 20px;
+span {
+  color: #f9004d;
 }
-
-/* Styling for the Projects section */
-#projects {
-  background-color: #222;
-  color: #fff;
-  padding: 20px;
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
 }
-
-/* Styling for the Contact Me section */
-#contact {
-  background-color: #111;
-  color: #fff;
-  padding: 20px;
-}
-
-/* Styling for headers within sections */
-h2 {
-  color: #00bcd4; /* Cyan or any futuristic color you prefer */
-  font-size: 24px; /* Increase font size for a modern look */
-}
-
-/* Styling for text content within sections */
-p {
-  font-size: 18px; /* Larger text for a modern look */
-  line-height: 1.6;
-}
-
-/* Styling for links within sections */
-a {
-  color: #00bcd4; /* Cyan or any futuristic color you prefer */
+nav ul li a {
+  color: white;
   text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+nav ul li a:hover {
+  color: #f9004d;
+  transition: 0.4s;
+}
+.btn {
+  background-color: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: transform 0.4s;
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+}
+h1 {
+  color: white;
+  margin: 20px 0px 20px;
+  font-size: 60px;
+}
+h3 {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+h4 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+.newsletter form {
+  width: 380px;
+  max-width: 100%;
+  position: relative;
 }
 
-a:hover {
-  text-decoration: underline;
+.newsletter form input:first-child {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 130px 14px 15px;
+  border: 2px solid #f9004d;
+  outline: none;
+  border-radius: 30px;
 }
-
-/* Add a border radius to give a futuristic feel to sections */
-section {
-  border-radius: 15px;
-  margin: 20px 0;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for a modern touch */
+.newsletter form input:last-child {
+  position: absolute;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: #f9004d;
+  color: white;
+  box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+  top: 6px;
+  right: 6px;
 }
