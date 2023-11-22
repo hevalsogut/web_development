@@ -198,6 +198,32 @@ button:hover {
   margin: 25px 0px;
   color: #f9004d;
 }
+
 h5 {
   color: white;
+  font-size: 25px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+p {
+  color: white;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 16px;
+  margin-bottom: 45;
+}
+.button {
+  background-color: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+.button:hover {
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
 }
