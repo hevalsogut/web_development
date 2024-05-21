@@ -1,0 +1,109 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css";
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+}
+*:focus {
+  outline: none;
+}
+html,
+body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+.chat {
+  height: 100%;
+  display: flex;
+}
+.chat .sidebar .search {
+  height: 40px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  align-items: center;
+  display: flex;
+  padding: 0 10px;
+}
+.chat .sidebar .search input {
+  width: 100%;
+  height: 30px;
+  background: #fff;
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 0 35px 0 15px;
+}
+.chat .sidebar .search i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #999;
+}
+.chat .sidebar {
+  width: 300px;
+  min-width: 300px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+}
+.chat .sidebar .contacts {
+  overflow: auto;
+}
+.chat .sidebar .contacts ul li a {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  padding: 0 10px;
+}
+.chat .sidebar .contacts ul li.active a,
+.chat .sidebar .contacts ul li a:hover {
+  background: #fff;
+}
+.chat .sidebar .contacts ul li a .notification {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: red;
+  font-size: 11px;
+  line-height: 17px;
+  text-align: center;
+  color: white;
+  margin-left: auto;
+}
+
+.chat .sidebar .contacts ul li a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+.chat .sidebar .contacts ul li a .name {
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.chat .sidebar .contacts ul li a .contact .message {
+  font-size: 13px;
+  color: #696969;
+}
+.chat .content {
+  flex: 1;
+  border-left: 1px solid #ddd;
+}
+.chat .content .message-header .user-imfo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+.chat .content .message-header {
+  display: flex;
+}
